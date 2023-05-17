@@ -1,5 +1,5 @@
 {
-  "name": "nwidart/laravel-menus",
+  "name": "squipix/laravel-menus",
   "description": "Laravel Menu management",
   "keywords": [
     "laravel",
@@ -17,13 +17,17 @@
     {
       "name": "Pingpong Labs",
       "email": "pingpong.labs@gmail.com"
+    },
+    {
+      "name": "Anas Naguib",
+      "email": "anas.naguib86@gmail.com"
     }
   ],
   "require": {
     "php": ">=7.3",
-    "illuminate/support": "^8.0",
-    "illuminate/config": "^8.0",
-    "illuminate/view": "^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0",
+    "illuminate/config": "^8.0|^9.0|^10.0",
+    "illuminate/view": "^8.0|^9.0|^10.0",
     "laravelcollective/html": "6.2.*"
   },
   "require-dev": {
