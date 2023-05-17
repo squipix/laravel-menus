@@ -1,4 +1,5 @@
 # Laravel Menus
+Fork of nWidart/laravel-menus that adds support form Laravel 9, 10
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/nwidart/laravel-menus.svg?style=flat-square)](https://packagist.org/packages/nwidart/laravel-menus)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
