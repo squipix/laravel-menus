@@ -128,7 +128,7 @@ class MenuItem implements ArrayableContract
     {
         foreach ($attributes as $key => $value) {
             if (in_array($key, $this->fillable)) {
-                $this->{$key} = $value;
+                $this->properties[$key] = $value;
             }
         }
     }
@@ -638,6 +638,19 @@ class MenuItem implements ArrayableContract
      */
     public function __get($key)
     {
-        return isset($this->$key) ? $this->$key : null;
+        return array_key_exists($key, $this->properties) ? $this->properties[$key] : null;
+    }
+
+    /**
+     * Set property.
+     *
+     * @param string $key
+     * @param mixed $value
+     */
+    public function __set($key, $value)
+    {
+        if (in_array($key, $this->fillable)) {
+            $this->properties[$key] = $value;
+        }
     }
 }
