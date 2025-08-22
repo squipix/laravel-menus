@@ -29,6 +29,54 @@ class MenuItem implements ArrayableContract
      */
     protected $properties = [];
 
+
+
+    /** The url of the menu item.
+     *
+     * @var string
+     */
+    public ?string $url = null;
+    /** The route of the menu item.
+     *
+     * @var string
+     */
+    public ?string $route = null;
+    /** The title of the menu item.
+     *
+     * @var string
+     */
+    public ?string $title = null;
+    /** The name of the menu item.
+     *
+     * @var string
+     */
+    public ?string $name = null;
+    /** The icon of the menu item.
+     *
+     * @var string
+     */
+    public ?string $icon = null;
+    /** The parent of the menu item.
+     *
+     * @var int
+     */
+    public ?string $parent = null;
+    /** The HTML attributes of the menu item.
+     *
+     * @var array
+     */
+    public array $attributes = [];
+    /** The active state of the menu item.
+     *
+     * @var bool
+     */
+    public bool $active = false;
+    /** The order of the menu item.
+     *
+     * @var int
+     */
+    public int $order = 0;
+
     /**
      * The child collections for current menu item.
      *
@@ -124,11 +172,11 @@ class MenuItem implements ArrayableContract
      *
      * @param array $attributes
      */
-    public function fill($attributes)
+    public function fill(array $attributes): void
     {
         foreach ($attributes as $key => $value) {
-            if (in_array($key, $this->fillable)) {
-                $this->properties[$key] = $value;
+            if (in_array($key, $this->fillable, true)) {
+                $this->{$key} = $value;
             }
         }
     }
@@ -638,19 +686,6 @@ class MenuItem implements ArrayableContract
      */
     public function __get($key)
     {
-        return array_key_exists($key, $this->properties) ? $this->properties[$key] : null;
-    }
-
-    /**
-     * Set property.
-     *
-     * @param string $key
-     * @param mixed $value
-     */
-    public function __set($key, $value)
-    {
-        if (in_array($key, $this->fillable)) {
-            $this->properties[$key] = $value;
-        }
+        return isset($this->$key) ? $this->$key : null;
     }
 }
