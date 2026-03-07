@@ -1,6 +1,6 @@
 ```markdown
 # Laravel Menus
-Fork of nWidart/laravel-menus that adds support for Laravel 9, 10, 11, 12
+This package is a fork and drop-in replacement for nWidart/laravel-menus that adds support for Laravel 9, 10, 11, 12
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/Squipix/laravel-menus.svg?style=flat-square)](https://packagist.org/packages/Squipix/laravel-menus)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
