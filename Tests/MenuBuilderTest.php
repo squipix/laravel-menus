@@ -94,4 +94,26 @@ class MenuBuilderTest extends BaseTestCase
 
         self::assertInstanceOf(\Squipix\Menus\Presenters\PresenterInterface::class, $builder->getPresenter());
     }
+
+    /** @test */
+    public function it_throws_exception_if_presenter_class_does_not_exist()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage("Presenter class NonExistentClass does not exist.");
+
+        $builder = new MenuBuilder('main', app(Repository::class));
+        $builder->setPresenter('NonExistentClass');
+        $builder->getPresenter();
+    }
+
+    /** @test */
+    public function it_throws_exception_if_presenter_does_not_implement_interface()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Presenter must implement ' . \Squipix\Menus\Presenters\PresenterInterface::class);
+
+        $builder = new MenuBuilder('main', app(Repository::class));
+        $builder->setPresenter(\stdClass::class);
+        $builder->getPresenter();
+    }
 }

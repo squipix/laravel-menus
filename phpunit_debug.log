@@ -1,0 +1,512 @@
+PHPUnit Started (PHPUnit 11.5.55 using PHP 8.4.18 (cli) on Linux)
+Test Runner Configured
+Bootstrap Finished (/home/mastermind/Documents/php-libraries/laravel-menus/vendor/autoload.php)
+Event Facade Sealed
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_makes_a_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_title(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_attribute(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_prefix_url(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_divider(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_header(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_can_get_ordered_items(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_presenter(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_make_an_empty_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_set_properties_on_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_fill_a_menu_item_with_allowed_properties(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_set_icon_via_attributes(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_add_a_child_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_get_ordered_children(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_create_a_dropdown_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_route_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_make_a_route_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_url_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_make_a_url_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_add_a_menu_item_divider(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_add_a_header_menu_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_url_type(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_route_type(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_get_request_uri(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_get_the_icon_html_attribute(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_returns_no_icon_if_none_exist(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_returns_default_icon_if_none_exist(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_get_item_properties(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_get_item_html_attributes(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_check_for_a_submenu(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_check_active_state_on_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_check_inactive_state_on_item(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_hide_item_using_callback(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuItemTest::it_can_check_if_child_is_active(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_generates_an_empty_menu(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_makes_is_an_alias_for_create(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_render_is_an_alias_of_get(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_can_get_the_instance_of_a_menu(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_can_modify_a_menu_instance(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_gets_a_partial_for_dropdown_styles(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_can_get_all_menus(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_can_count_menus(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Runner Triggered Deprecation (Metadata found in doc-comment for method Squipix\Menus\Tests\MenuTest::it_can_destroy_all_menus(). Metadata in doc-comments is deprecated and will no longer be supported in PHPUnit 12. Update your test code to use attributes instead.)
+Test Suite Loaded (43 tests)
+Test Runner Started
+Test Suite Sorted
+Test Runner Execution Started (43 tests)
+Test Suite Started (/home/mastermind/Documents/php-libraries/laravel-menus/phpunit.xml.dist, 43 tests)
+Test Suite Started (Laravel Menus Test Suite, 43 tests)
+Test Suite Started (Squipix\Menus\Tests\MenuBuilderTest, 8 tests)
+Before First Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUpBeforeClass)
+Before First Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUpBeforeClass
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_makes_a_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_makes_a_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_makes_a_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_makes_a_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_title)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_title)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_title)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_title)
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_attribute)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_attribute)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_attribute)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_can_find_item_by_attribute)
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_prefix_url)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_prefix_url)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_prefix_url)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_prefix_url)
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_divider)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_divider)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_divider)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_divider)
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_header)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_header)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_header)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_can_add_a_header)
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_can_get_ordered_items)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_can_get_ordered_items)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_can_get_ordered_items)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_can_get_ordered_items)
+Test Preparation Started (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_presenter)
+Before Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_presenter)
+After Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_presenter)
+Test Finished (Squipix\Menus\Tests\MenuBuilderTest::it_can_set_and_get_presenter)
+After Last Test Method Called (Squipix\Menus\Tests\MenuBuilderTest::tearDownAfterClass)
+After Last Test Method Finished:
+- Squipix\Menus\Tests\MenuBuilderTest::tearDownAfterClass
+Test Suite Finished (Squipix\Menus\Tests\MenuBuilderTest, 8 tests)
+Test Suite Started (Squipix\Menus\Tests\MenuItemTest, 26 tests)
+Before First Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUpBeforeClass)
+Before First Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUpBeforeClass
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_make_an_empty_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_make_an_empty_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_make_an_empty_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_make_an_empty_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_set_properties_on_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_set_properties_on_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_set_properties_on_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_set_properties_on_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_fill_a_menu_item_with_allowed_properties)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_fill_a_menu_item_with_allowed_properties)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_fill_a_menu_item_with_allowed_properties)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_fill_a_menu_item_with_allowed_properties)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_set_icon_via_attributes)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_set_icon_via_attributes)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_set_icon_via_attributes)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_set_icon_via_attributes)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_child_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_child_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_child_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_child_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_get_ordered_children)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_get_ordered_children)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_get_ordered_children)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_get_ordered_children)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_create_a_dropdown_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_create_a_dropdown_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_create_a_dropdown_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_create_a_dropdown_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_route_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_route_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_route_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_route_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_route_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_route_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_route_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_route_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_url_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_url_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_url_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_simple_url_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_url_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_url_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_url_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_make_a_url_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_menu_item_divider)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_menu_item_divider)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_menu_item_divider)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_menu_item_divider)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_header_menu_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_header_menu_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_header_menu_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_add_a_header_menu_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_url_type)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_url_type)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_url_type)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_url_type)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_route_type)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_route_type)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_route_type)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_correct_url_for_route_type)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_get_request_uri)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_get_request_uri)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_get_request_uri)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_get_request_uri)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_icon_html_attribute)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_icon_html_attribute)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_icon_html_attribute)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_get_the_icon_html_attribute)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_returns_no_icon_if_none_exist)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_returns_no_icon_if_none_exist)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_returns_no_icon_if_none_exist)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_returns_no_icon_if_none_exist)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_returns_default_icon_if_none_exist)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_returns_default_icon_if_none_exist)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_returns_default_icon_if_none_exist)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_returns_default_icon_if_none_exist)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_properties)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_properties)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_properties)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_properties)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_html_attributes)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_html_attributes)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_html_attributes)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_get_item_html_attributes)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_check_for_a_submenu)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_check_for_a_submenu)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_check_for_a_submenu)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_check_for_a_submenu)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_check_active_state_on_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_check_active_state_on_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_check_active_state_on_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_check_active_state_on_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_check_inactive_state_on_item)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_check_inactive_state_on_item)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_check_inactive_state_on_item)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_check_inactive_state_on_item)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_hide_item_using_callback)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_hide_item_using_callback)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_hide_item_using_callback)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_hide_item_using_callback)
+Test Preparation Started (Squipix\Menus\Tests\MenuItemTest::it_can_check_if_child_is_active)
+Before Test Method Called (Squipix\Menus\Tests\MenuItemTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuItemTest::it_can_check_if_child_is_active)
+After Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuItemTest::it_can_check_if_child_is_active)
+Test Finished (Squipix\Menus\Tests\MenuItemTest::it_can_check_if_child_is_active)
+After Last Test Method Called (Squipix\Menus\Tests\MenuItemTest::tearDownAfterClass)
+After Last Test Method Finished:
+- Squipix\Menus\Tests\MenuItemTest::tearDownAfterClass
+Test Suite Finished (Squipix\Menus\Tests\MenuItemTest, 26 tests)
+Test Suite Started (Squipix\Menus\Tests\MenuTest, 9 tests)
+Before First Test Method Called (Squipix\Menus\Tests\MenuTest::setUpBeforeClass)
+Before First Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUpBeforeClass
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_generates_an_empty_menu)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_generates_an_empty_menu)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_generates_an_empty_menu)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_generates_an_empty_menu)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_makes_is_an_alias_for_create)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_makes_is_an_alias_for_create)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_makes_is_an_alias_for_create)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_makes_is_an_alias_for_create)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_render_is_an_alias_of_get)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_render_is_an_alias_of_get)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_render_is_an_alias_of_get)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_render_is_an_alias_of_get)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_can_get_the_instance_of_a_menu)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_can_get_the_instance_of_a_menu)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_can_get_the_instance_of_a_menu)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_can_get_the_instance_of_a_menu)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_can_modify_a_menu_instance)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_can_modify_a_menu_instance)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_can_modify_a_menu_instance)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_can_modify_a_menu_instance)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_gets_a_partial_for_dropdown_styles)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_gets_a_partial_for_dropdown_styles)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_gets_a_partial_for_dropdown_styles)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_gets_a_partial_for_dropdown_styles)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_can_get_all_menus)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_can_get_all_menus)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_can_get_all_menus)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_can_get_all_menus)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_can_count_menus)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_can_count_menus)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_can_count_menus)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_can_count_menus)
+Test Preparation Started (Squipix\Menus\Tests\MenuTest::it_can_destroy_all_menus)
+Before Test Method Called (Squipix\Menus\Tests\MenuTest::setUp)
+Before Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::setUp
+Test Prepared (Squipix\Menus\Tests\MenuTest::it_can_destroy_all_menus)
+After Test Method Called (Squipix\Menus\Tests\MenuTest::tearDown)
+After Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDown
+Test Passed (Squipix\Menus\Tests\MenuTest::it_can_destroy_all_menus)
+Test Finished (Squipix\Menus\Tests\MenuTest::it_can_destroy_all_menus)
+After Last Test Method Called (Squipix\Menus\Tests\MenuTest::tearDownAfterClass)
+After Last Test Method Finished:
+- Squipix\Menus\Tests\MenuTest::tearDownAfterClass
+Test Suite Finished (Squipix\Menus\Tests\MenuTest, 9 tests)
+Test Suite Finished (Laravel Menus Test Suite, 43 tests)
+Test Suite Finished (/home/mastermind/Documents/php-libraries/laravel-menus/phpunit.xml.dist, 43 tests)
+Test Runner Execution Finished
+Test Runner Finished
+PHPUnit Finished (Shell Exit Code: 0)

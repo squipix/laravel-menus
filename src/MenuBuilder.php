@@ -353,7 +353,7 @@ class MenuBuilder implements Countable
      * @param callable $callback
      * @param array    $attributes
      *
-     * @return $this
+     * @return \Squipix\Menus\MenuItem
      */
     public function dropdown($title, \Closure $callback, $order = null, array $attributes = array())
     {
@@ -385,7 +385,7 @@ class MenuBuilder implements Countable
      * @param array $parameters
      * @param array $attributes
      *
-     * @return static
+     * @return \Squipix\Menus\MenuItem
      */
     public function route($route, $title, $parameters = array(), $order = null, $attributes = array())
     {
@@ -431,7 +431,7 @@ class MenuBuilder implements Countable
      * @param $title
      * @param array $attributes
      *
-     * @return static
+     * @return \Squipix\Menus\MenuItem
      */
     public function url($url, $title, $order = 0, $attributes = array())
     {
@@ -458,7 +458,7 @@ class MenuBuilder implements Countable
      * Add new divider item.
      *
      * @param int $order
-     * @return \Squipix\Menus\MenuItem
+     * @return $this
      */
     public function addDivider($order = null)
     {
@@ -470,7 +470,7 @@ class MenuBuilder implements Countable
     /**
      * Add new header item.
      *
-     * @return \Squipix\Menus\MenuItem
+     * @return $this
      */
     public function addHeader($title, $order = null)
     {
