@@ -199,15 +199,17 @@ class MenuBuilder implements Countable
      */
     public function getPresenter()
     {
-        $presenter = new $this->presenter();
+        if (!class_exists($this->presenter)) {
+            throw new \InvalidArgumentException("Presenter class {$this->presenter} does not exist.");
+        }
 
-        if (!$presenter instanceof Presenters\PresenterInterface) {
+        if (!is_subclass_of($this->presenter, Presenters\PresenterInterface::class)) {
             throw new \InvalidArgumentException(
                 'Presenter must implement ' . Presenters\PresenterInterface::class
             );
         }
 
-        return $presenter;
+        return new $this->presenter();
     }
 
     /**
