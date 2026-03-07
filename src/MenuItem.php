@@ -3,7 +3,7 @@
 namespace Nwidart\Menus;
 
 use Closure;
-use Collective\Html\HtmlFacade as HTML;
+use Squipix\Html\HtmlFacade as HTML;
 use Illuminate\Contracts\Support\Arrayable as ArrayableContract;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Request;
@@ -38,9 +38,9 @@ class MenuItem implements ArrayableContract
     public ?string $url = null;
     /** The route of the menu item.
      *
-     * @var string
+     * @var string|array|null
      */
-    public ?string $route = null;
+    public string|array|null $route = null;
     /** The title of the menu item.
      *
      * @var string
@@ -58,9 +58,9 @@ class MenuItem implements ArrayableContract
     public ?string $icon = null;
     /** The parent of the menu item.
      *
-     * @var int
+     * @var int|string|null
      */
-    public ?string $parent = null;
+    public int|string|null $parent = null;
     /** The HTML attributes of the menu item.
      *
      * @var array
@@ -73,9 +73,9 @@ class MenuItem implements ArrayableContract
     public bool $active = false;
     /** The order of the menu item.
      *
-     * @var int
+     * @var int|null
      */
-    public int $order = 0;
+    public ?int $order = 0;
 
     /**
      * The child collections for current menu item.
