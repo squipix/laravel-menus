@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Menus\Presenters\Foundation;
+namespace Squipix\Menus\Presenters\Foundation;
 
-use Nwidart\Menus\Presenters\Presenter;
+use Squipix\Menus\Presenters\Presenter;
 
 class ZurbMenuPresenter extends Presenter
 {

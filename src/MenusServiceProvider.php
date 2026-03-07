@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Menus;
+namespace Squipix\Menus;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Foundation\AliasLoader;

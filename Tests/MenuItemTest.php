@@ -1,10 +1,10 @@
 <?php
 
-namespace Nwidart\Menus\Tests;
+namespace Squipix\Menus\Tests;
 
 use Illuminate\Support\Arr;
-use Nwidart\Menus\Menu;
-use Nwidart\Menus\MenuItem;
+use Squipix\Menus\Menu;
+use Squipix\Menus\MenuItem;
 
 class MenuItemTest extends BaseTestCase
 {
@@ -13,7 +13,7 @@ class MenuItemTest extends BaseTestCase
      */
     private $menu;
 
-    public function setUp() : void
+    public function setUp(): void
     {
         parent::setUp();
         $this->menu = app(Menu::class);
@@ -296,7 +296,47 @@ class MenuItemTest extends BaseTestCase
         $this->assertTrue($menuItem->hasChilds());
     }
 
+    /** @test */
     public function it_can_check_active_state_on_item()
     {
+        $menuItem = MenuItem::make(['url' => 'settings/account', 'title' => 'Parent Item']);
+
+        $this->assertFalse($menuItem->isActive());
+
+        $menuItem = MenuItem::make(['url' => 'settings/account', 'title' => 'Parent Item', 'attributes' => ['active' => true]]);
+        $this->assertTrue($menuItem->isActive());
+    }
+
+    /** @test */
+    public function it_can_check_inactive_state_on_item()
+    {
+        $menuItem = MenuItem::make(['url' => 'settings/account', 'title' => 'Parent Item', 'attributes' => ['inactive' => true]]);
+        $this->assertTrue($menuItem->inactive());
+        $this->assertFalse($menuItem->isActive());
+    }
+
+    /** @test */
+    public function it_can_hide_item_using_callback()
+    {
+        $menuItem = MenuItem::make(['url' => 'settings/account', 'title' => 'Parent Item']);
+
+        $this->assertFalse($menuItem->hidden());
+
+        $menuItem->hideWhen(function () {
+            return true;
+        });
+
+        $this->assertTrue($menuItem->hidden());
+    }
+
+    /** @test */
+    public function it_can_check_if_child_is_active()
+    {
+        $menuItem = MenuItem::make(['title' => 'Parent Item']);
+        $menuItem->dropdown('Dropdown item', function (MenuItem $sub) {
+            $sub->url('settings/account', 'Account', 1, ['active' => true]);
+        });
+
+        $this->assertTrue($menuItem->hasActiveOnChild());
     }
 }

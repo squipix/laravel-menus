@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Menus;
+namespace Squipix\Menus;
 
 use Closure;
 use Squipix\Html\HtmlFacade as HTML;

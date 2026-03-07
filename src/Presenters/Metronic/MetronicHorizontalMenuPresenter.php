@@ -6,9 +6,9 @@
  * Description: Generate horizontal menu to metronic theme
  */
 
-namespace Nwidart\Menus\Presenters\Metronic;
+namespace Squipix\Menus\Presenters\Metronic;
 
-use Nwidart\Menus\Presenters\Presenter;
+use Squipix\Menus\Presenters\Presenter;
 
 class MetronicHorizontalMenuPresenter extends Presenter
 {

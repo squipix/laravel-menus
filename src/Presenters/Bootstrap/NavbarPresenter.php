@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Menus\Presenters\Bootstrap;
+namespace Squipix\Menus\Presenters\Bootstrap;
 
-use Nwidart\Menus\Presenters\Presenter;
+use Squipix\Menus\Presenters\Presenter;
 
 class NavbarPresenter extends Presenter
 {
@@ -87,7 +87,7 @@ class NavbarPresenter extends Presenter
     /**
      * Get multilevel menu wrapper.
      *
-     * @param \Nwidart\Menus\MenuItem $item
+     * @param \Squipix\Menus\MenuItem $item
      *
      * @return string`
      */

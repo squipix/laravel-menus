@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Menus\Tests;
+namespace Squipix\Menus\Tests;
 
-use Nwidart\Menus\Menu;
-use Nwidart\Menus\MenuBuilder;
+use Squipix\Menus\Menu;
+use Squipix\Menus\MenuBuilder;
 
 class MenuTest extends BaseTestCase
 {
@@ -12,7 +12,7 @@ class MenuTest extends BaseTestCase
      */
     private $menu;
 
-    public function setUp() : void
+    public function setUp(): void
     {
         parent::setUp();
         $this->menu = app(Menu::class);

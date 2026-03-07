@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Menus\Presenters\Admin;
+namespace Squipix\Menus\Presenters\Admin;
 
-use Nwidart\Menus\Presenters\Presenter;
+use Squipix\Menus\Presenters\Presenter;
 
 class AdminltePresenter extends Presenter
 {
@@ -89,7 +89,7 @@ class AdminltePresenter extends Presenter
     /**
      * Get multilevel menu wrapper.
      *
-     * @param \Nwidart\Menus\MenuItem $item
+     * @param \Squipix\Menus\MenuItem $item
      *
      * @return string`
      */
