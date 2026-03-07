@@ -6,9 +6,9 @@
  * Description: Generate horizontal menu to metronic theme
  */
 
-namespace App\Presenters;
+namespace Squipix\Menus\Presenters\Metronic;
 
-use Nwidart\Menus\Presenters\Presenter;
+use Squipix\Menus\Presenters\Presenter;
 
 class MetronicHorizontalMenuPresenter extends Presenter
 {
@@ -33,7 +33,7 @@ class MetronicHorizontalMenuPresenter extends Presenter
      */
     public function getMenuWithoutDropdownWrapper($item)
     {
-        return '<li ' . $this->getActiveState($item) . '>' . $item->getIcon() . '<a href="' . $item->getUrl() . '" class="m-menu__link"><span class="m-menu__item-here"></span><span class="m-menu__link-text">' . $item->title . '</span></a></li>';
+        return '<li ' . $this->getActiveState($item) . '>' . $item->getIcon() . '<a href="' . e($item->getUrl()) . '" class="m-menu__link"><span class="m-menu__item-here"></span><span class="m-menu__link-text">' . e($item->title) . '</span></a></li>';
     }
 
     /**
@@ -76,7 +76,7 @@ class MetronicHorizontalMenuPresenter extends Presenter
                             <a  href="#" class="m-menu__link m-menu__toggle">
                                 ' . $item->getIcon() . '
                                 <span class="m-menu__link-text">
-                                    ' . $item->title . '
+                                    ' . e($item->title) . '
                                 </span>
                                 <i class="m-menu__hor-arrow la la-angle-down"></i>
                                 <i class="m-menu__ver-arrow la la-angle-right"></i>
@@ -97,7 +97,7 @@ class MetronicHorizontalMenuPresenter extends Presenter
                             <a  href="#" class="m-menu__link m-menu__toggle">
                                 ' . $item->getIcon() . '
                                 <span class="m-menu__link-text">
-                                    ' . $item->title . '
+                                    ' . e($item->title) . '
                                 </span>
                                 <i class="m-menu__hor-arrow la la-angle-right"></i>
                                 <i class="m-menu__ver-arrow la la-angle-right"></i>

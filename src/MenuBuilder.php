@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Menus;
+namespace Squipix\Menus;
 
 use Countable;
 use Illuminate\Contracts\Config\Repository;
@@ -121,7 +121,7 @@ class MenuBuilder implements Countable
      *
      * @param  string $key
      * @param  string $value
-     * @return \Nwidart\Menus\MenuItem
+     * @return \Squipix\Menus\MenuItem
      */
     public function findBy($key, $value)
     {
@@ -195,10 +195,20 @@ class MenuBuilder implements Countable
     /**
      * Get presenter instance.
      *
-     * @return \Nwidart\Menus\Presenters\PresenterInterface
+     * @return \Squipix\Menus\Presenters\PresenterInterface
      */
     public function getPresenter()
     {
+        if (!class_exists($this->presenter)) {
+            throw new \InvalidArgumentException("Presenter class {$this->presenter} does not exist.");
+        }
+
+        if (!is_subclass_of($this->presenter, Presenters\PresenterInterface::class)) {
+            throw new \InvalidArgumentException(
+                'Presenter must implement ' . Presenters\PresenterInterface::class
+            );
+        }
+
         return new $this->presenter();
     }
 
@@ -294,7 +304,7 @@ class MenuBuilder implements Countable
             preg_match_all('/{[\s]*?([^\s]+)[\s]*?}/i', $key, $matches, PREG_SET_ORDER);
             foreach ($matches as $match) {
                 if (array_key_exists($match[1], $this->bindings)) {
-                    $key = preg_replace('/' . $match[0] . '/', $this->bindings[$match[1]], $key, 1);
+                    $key = preg_replace('/' . preg_quote($match[0], '/') . '/', $this->bindings[$match[1]], $key, 1);
                 }
             }
         }
@@ -325,7 +335,7 @@ class MenuBuilder implements Countable
      *
      * @param array $attributes
      *
-     * @return \Nwidart\Menus\MenuItem
+     * @return \Squipix\Menus\MenuItem
      */
     public function add(array $attributes = array())
     {
@@ -343,7 +353,7 @@ class MenuBuilder implements Countable
      * @param callable $callback
      * @param array    $attributes
      *
-     * @return $this
+     * @return \Squipix\Menus\MenuItem
      */
     public function dropdown($title, \Closure $callback, $order = null, array $attributes = array())
     {
@@ -375,7 +385,7 @@ class MenuBuilder implements Countable
      * @param array $parameters
      * @param array $attributes
      *
-     * @return static
+     * @return \Squipix\Menus\MenuItem
      */
     public function route($route, $title, $parameters = array(), $order = null, $attributes = array())
     {
@@ -421,7 +431,7 @@ class MenuBuilder implements Countable
      * @param $title
      * @param array $attributes
      *
-     * @return static
+     * @return \Squipix\Menus\MenuItem
      */
     public function url($url, $title, $order = 0, $attributes = array())
     {
@@ -448,7 +458,7 @@ class MenuBuilder implements Countable
      * Add new divider item.
      *
      * @param int $order
-     * @return \Nwidart\Menus\MenuItem
+     * @return $this
      */
     public function addDivider($order = null)
     {
@@ -460,7 +470,7 @@ class MenuBuilder implements Countable
     /**
      * Add new header item.
      *
-     * @return \Nwidart\Menus\MenuItem
+     * @return $this
      */
     public function addHeader($title, $order = null)
     {

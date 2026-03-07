@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Menus\Presenters\Bootstrap;
+namespace Squipix\Menus\Presenters\Bootstrap;
 
 class NavMenuPresenter extends NavbarPresenter
 {
@@ -19,20 +19,20 @@ class NavMenuPresenter extends NavbarPresenter
     {
         return '<li class="dropdown' . $this->getActiveStateOnChild($item, ' active open') . '">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					' . $item->getIcon() . ' ' . $item->title . '
+					' . $item->getIcon() . ' ' . e($item->title) . '
 			      	<b class="caret pull-right"></b>
 			      </a>
 			      <ul class="dropdown-menu navmenu-nav">
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;
+            . PHP_EOL;
     }
 
     /**
      * Get multilevel menu wrapper.
      *
-     * @param \Nwidart\Menus\MenuItem $item
+     * @param \Squipix\Menus\MenuItem $item
      *
      * @return string`
      */
@@ -40,13 +40,13 @@ class NavMenuPresenter extends NavbarPresenter
     {
         return '<li class="dropdown' . $this->getActiveStateOnChild($item, ' active open') . '">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					' . $item->getIcon() . ' ' . $item->title . '
+					' . $item->getIcon() . ' ' . e($item->title) . '
 			      	<b class="caret pull-right caret-right"></b>
 			      </a>
 			      <ul class="dropdown-menu navmenu-nav">
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;
+            . PHP_EOL;
     }
 }

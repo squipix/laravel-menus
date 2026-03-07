@@ -1,18 +1,13 @@
 <?php
 
-namespace Nwidart\Menus;
+namespace Squipix\Menus;
 
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
-class MenusServiceProvider extends ServiceProvider
+class MenusServiceProvider extends ServiceProvider implements DeferrableProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = true;
 
     /**
      * Bootstrap the application events.
@@ -50,11 +45,11 @@ class MenusServiceProvider extends ServiceProvider
      */
     private function registerHtmlPackage()
     {
-        $this->app->register('Collective\Html\HtmlServiceProvider');
+        $this->app->register('Squipix\Html\HtmlServiceProvider');
 
         $aliases = [
-            'HTML' => 'Collective\Html\HtmlFacade',
-            'Form' => 'Collective\Html\FormFacade',
+            'HTML' => 'Squipix\Html\HtmlFacade',
+            'Form' => 'Squipix\Html\FormFacade',
         ];
 
         AliasLoader::getInstance($aliases)->register();
@@ -85,7 +80,7 @@ class MenusServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            $viewsPath => base_path('resources/views/vendor/nwidart/menus'),
+            $viewsPath => base_path('resources/views/vendor/Squipix/menus'),
         ], 'views');
     }
 }

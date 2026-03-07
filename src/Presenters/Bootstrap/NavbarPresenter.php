@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Menus\Presenters\Bootstrap;
+namespace Squipix\Menus\Presenters\Bootstrap;
 
-use Nwidart\Menus\Presenters\Presenter;
+use Squipix\Menus\Presenters\Presenter;
 
 class NavbarPresenter extends Presenter
 {
@@ -27,7 +27,7 @@ class NavbarPresenter extends Presenter
      */
     public function getMenuWithoutDropdownWrapper($item)
     {
-        return '<li' . $this->getActiveState($item) . '><a href="' . $item->getUrl() . '" ' . $item->getAttributes() . '>' . $item->getIcon() . ' ' . $item->title . '</a></li>' . PHP_EOL;
+        return '<li' . $this->getActiveState($item) . '><a href="' . e($item->getUrl()) . '" ' . $item->getAttributes() . '>' . $item->getIcon() . ' ' . e($item->title) . '</a></li>' . PHP_EOL;
     }
 
     /**
@@ -64,7 +64,7 @@ class NavbarPresenter extends Presenter
      */
     public function getHeaderWrapper($item)
     {
-        return '<li class="dropdown-header">' . $item->title . '</li>';
+        return '<li class="dropdown-header">' . e($item->title) . '</li>';
     }
 
     /**
@@ -74,20 +74,20 @@ class NavbarPresenter extends Presenter
     {
         return '<li class="dropdown' . $this->getActiveStateOnChild($item, ' active') . '">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					' . $item->getIcon() . ' ' . $item->title . '
+					' . $item->getIcon() . ' ' . e($item->title) . '
 			      	<b class="caret"></b>
 			      </a>
 			      <ul class="dropdown-menu">
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;
+            . PHP_EOL;
     }
 
     /**
      * Get multilevel menu wrapper.
      *
-     * @param \Nwidart\Menus\MenuItem $item
+     * @param \Squipix\Menus\MenuItem $item
      *
      * @return string`
      */
@@ -95,13 +95,13 @@ class NavbarPresenter extends Presenter
     {
         return '<li class="dropdown' . $this->getActiveStateOnChild($item, ' active') . '">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					' . $item->getIcon() . ' ' . $item->title . '
+					' . $item->getIcon() . ' ' . e($item->title) . '
 			      	<b class="caret pull-right caret-right"></b>
 			      </a>
 			      <ul class="dropdown-menu">
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;
+            . PHP_EOL;
     }
 }
