@@ -37,8 +37,8 @@ class SidebarMenuPresenter extends Presenter
     public function getMenuWithoutDropdownWrapper($item)
     {
         return '<li' . $this->getActiveState($item) . '>
-			<a href="' . $item->getUrl() . '" ' . $item->getAttributes() . '>'
-        . $item->getIcon() . ' ' . $item->title . '</a></li>' . PHP_EOL;
+			<a href="' . e($item->getUrl()) . '" ' . $item->getAttributes() . '>'
+            . $item->getIcon() . ' ' . e($item->title) . '</a></li>' . PHP_EOL;
     }
 
     /**
@@ -75,7 +75,7 @@ class SidebarMenuPresenter extends Presenter
      */
     public function getHeaderWrapper($item)
     {
-        return '<li class="dropdown-header">' . $item->title . '</li>';
+        return '<li class="dropdown-header">' . e($item->title) . '</li>';
     }
 
     /**
@@ -88,7 +88,7 @@ class SidebarMenuPresenter extends Presenter
         return '
 		<li class="' . $this->getActiveStateOnChild($item) . ' panel panel-default" id="dropdown">
 			<a data-toggle="collapse" href="#' . $id . '">
-				' . $item->getIcon() . ' ' . $item->title . ' <span class="caret"></span>
+				' . $item->getIcon() . ' ' . e($item->title) . ' <span class="caret"></span>
 			</a>
 			<div id="' . $id . '" class="panel-collapse collapse ' . $this->getActiveStateOnChild($item, 'in') . '">
 				<div class="panel-body">

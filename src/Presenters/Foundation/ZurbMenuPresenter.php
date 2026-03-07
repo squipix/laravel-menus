@@ -11,7 +11,7 @@ class ZurbMenuPresenter extends Presenter
      */
     public function getOpenTagWrapper()
     {
-        return  PHP_EOL . '<nav class="custom-main">
+        return PHP_EOL . '<nav class="custom-main">
         <ul class="dropdown menu" data-dropdown-menu>' . PHP_EOL;
     }
 
@@ -20,7 +20,7 @@ class ZurbMenuPresenter extends Presenter
      */
     public function getCloseTagWrapper()
     {
-        return  PHP_EOL . '</ul></nav>' . PHP_EOL;
+        return PHP_EOL . '</ul></nav>' . PHP_EOL;
     }
 
     /**
@@ -28,7 +28,7 @@ class ZurbMenuPresenter extends Presenter
      */
     public function getMenuWithoutDropdownWrapper($item)
     {
-        return '<li' . $this->getActiveState($item) . '><a href="' . $item->getUrl() . '">' . $item->title . '</a></li>';
+        return '<li' . $this->getActiveState($item) . '><a href="' . e($item->getUrl()) . '">' . e($item->title) . '</a></li>';
     }
 
     /**
@@ -53,7 +53,7 @@ class ZurbMenuPresenter extends Presenter
     public function getMenuWithDropDownWrapper($item)
     {
         return '<li class="dropdown dropdown-primary">
-                    <a class="dropdown-toggle" href="#">' . $item->title . '</a>
+                    <a class="dropdown-toggle" href="#">' . e($item->title) . '</a>
                     <ul class="menu">
                       ' . $this->getChildMenuItems($item) . '
                     </ul>
@@ -66,7 +66,7 @@ class ZurbMenuPresenter extends Presenter
     public function getMultiLevelDropdownWrapper($item)
     {
         return '<li>
-                  <a href="#">' . $item->title . '</a>
+                  <a href="#">' . e($item->title) . '</a>
                   <ul class="menu">
                     ' . $this->getChildMenuItems($item) . '
                   </ul>

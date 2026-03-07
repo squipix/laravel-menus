@@ -199,7 +199,15 @@ class MenuBuilder implements Countable
      */
     public function getPresenter()
     {
-        return new $this->presenter();
+        $presenter = new $this->presenter();
+
+        if (!$presenter instanceof Presenters\PresenterInterface) {
+            throw new \InvalidArgumentException(
+                'Presenter must implement ' . Presenters\PresenterInterface::class
+            );
+        }
+
+        return $presenter;
     }
 
     /**
@@ -294,7 +302,7 @@ class MenuBuilder implements Countable
             preg_match_all('/{[\s]*?([^\s]+)[\s]*?}/i', $key, $matches, PREG_SET_ORDER);
             foreach ($matches as $match) {
                 if (array_key_exists($match[1], $this->bindings)) {
-                    $key = preg_replace('/' . $match[0] . '/', $this->bindings[$match[1]], $key, 1);
+                    $key = preg_replace('/' . preg_quote($match[0], '/') . '/', $this->bindings[$match[1]], $key, 1);
                 }
             }
         }

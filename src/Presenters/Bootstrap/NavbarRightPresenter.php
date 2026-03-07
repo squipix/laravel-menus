@@ -19,13 +19,13 @@ class NavbarRightPresenter extends NavbarPresenter
     {
         return '<li class="dropdown pull-right">
 			      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					' . $item->getIcon() . ' ' . $item->title . '
+					' . $item->getIcon() . ' ' . e($item->title) . '
 			      	<b class="caret"></b>
 			      </a>
 			      <ul class="dropdown-menu">
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;
+            . PHP_EOL;
     }
 }

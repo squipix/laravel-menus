@@ -27,7 +27,7 @@ class AdminltePresenter extends Presenter
      */
     public function getMenuWithoutDropdownWrapper($item)
     {
-        return '<li' . $this->getActiveState($item) . '><a href="' . $item->getUrl() . '" ' . $item->getAttributes() . '>' . $item->getIcon() . ' <span>' . $item->title . '</span></a></li>' . PHP_EOL;
+        return '<li' . $this->getActiveState($item) . '><a href="' . e($item->getUrl()) . '" ' . $item->getAttributes() . '>' . $item->getIcon() . ' <span>' . e($item->title) . '</span></a></li>' . PHP_EOL;
     }
 
     /**
@@ -64,7 +64,7 @@ class AdminltePresenter extends Presenter
      */
     public function getHeaderWrapper($item)
     {
-        return '<li class="header">' . $item->title . '</li>';
+        return '<li class="header">' . e($item->title) . '</li>';
     }
 
     /**
@@ -74,7 +74,7 @@ class AdminltePresenter extends Presenter
     {
         return '<li class="treeview' . $this->getActiveStateOnChild($item, ' active') . '">
 		          <a href="#">
-					' . $item->getIcon() . ' <span>' . $item->title . '</span>
+					' . $item->getIcon() . ' <span>' . e($item->title) . '</span>
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -83,7 +83,7 @@ class AdminltePresenter extends Presenter
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;
+            . PHP_EOL;
     }
 
     /**
@@ -97,7 +97,7 @@ class AdminltePresenter extends Presenter
     {
         return '<li class="treeview' . $this->getActiveStateOnChild($item, ' active') . '">
 		          <a href="#">
-					' . $item->getIcon() . ' <span>' . $item->title . '</span>
+					' . $item->getIcon() . ' <span>' . e($item->title) . '</span>
 			      	<span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -106,6 +106,6 @@ class AdminltePresenter extends Presenter
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;
+            . PHP_EOL;
     }
 }

@@ -403,13 +403,13 @@ class MenuItem implements ArrayableContract
     public function getIcon($default = null)
     {
         if ($this->icon !== null && $this->icon !== '') {
-            return '<i class="' . $this->icon . '"></i>';
+            return '<i class="' . e($this->icon) . '"></i>';
         }
         if ($default === null) {
             return $default;
         }
 
-        return '<i class="' . $default . '"></i>';
+        return '<i class="' . e($default) . '"></i>';
     }
 
     /**
