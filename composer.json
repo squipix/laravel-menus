@@ -38,12 +38,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Nwidart\\Menus\\": "src"
+      "Squipix\\Menus\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Nwidart\\Menus\\Tests\\": "Tests"
+      "Squipix\\Menus\\Tests\\": "Tests"
     }
   },
   "extra": {
@@ -52,10 +52,10 @@
     },
     "laravel": {
       "providers": [
-        "Nwidart\\Menus\\MenusServiceProvider"
+        "Squipix\\Menus\\MenusServiceProvider"
       ],
       "aliases": {
-        "Menu": "Nwidart\\Menus\\Facades\\Menu"
+        "Menu": "Squipix\\Menus\\Facades\\Menu"
       }
     }
   },

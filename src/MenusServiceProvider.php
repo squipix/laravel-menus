@@ -80,7 +80,7 @@ class MenusServiceProvider extends ServiceProvider implements DeferrableProvider
         ], 'config');
 
         $this->publishes([
-            $viewsPath => base_path('resources/views/vendor/nwidart/menus'),
+            $viewsPath => base_path('resources/views/vendor/Squipix/menus'),
         ], 'views');
     }
 }
