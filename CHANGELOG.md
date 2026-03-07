@@ -2,8 +2,13 @@
 
 All Notable changes to `laravel-menus` will be documented in this file.
 
-## Next
+## 2.0.0 - 2026-03-07
 
+### Added
+- Forked from `nwidart/laravel-menus` to `squipix/laravel-menus`.
+- Laravel 9, 10, 11, and 12 support.
+- PHP 8.2+ support.
+- Fixed dynamic instantiation vulnerability in `MenuBuilder.php`.
 ## 6.0.0 - 2020-11-11
 
 ### Added
