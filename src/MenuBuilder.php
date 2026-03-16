@@ -247,7 +247,44 @@ class MenuBuilder implements Countable
      */
     public function getStyles()
     {
-        return $this->styles ?: $this->config->get('menus.styles');
+        return $this->styles ?: $this->getActiveStylePresenters();
+    }
+
+    /**
+     * Get active style name.
+     *
+     * @return string
+     */
+    public function getActiveStyle()
+    {
+        return $this->config->get('menus.activeStyle', 'style1');
+    }
+
+    /**
+     * Get presenter aliases for active style.
+     *
+     * @return array
+     */
+    protected function getActiveStylePresenters()
+    {
+        $stylePresenters = (array) $this->config->get('menus.stylePresenters', []);
+        $activeStylePresenters = Arr::get($stylePresenters, $this->getActiveStyle());
+
+        if (is_array($activeStylePresenters) && !empty($activeStylePresenters)) {
+            return $activeStylePresenters;
+        }
+
+        return (array) $this->config->get('menus.styles', []);
+    }
+
+    /**
+     * Get default presenter for active style.
+     *
+     * @return string|null
+     */
+    public function getDefaultPresenterForActiveStyle()
+    {
+        return $this->config->get('menus.styleDefaults.' . $this->getActiveStyle());
     }
 
     /**
@@ -538,6 +575,10 @@ class MenuBuilder implements Countable
 
         if (!is_null($this->view)) {
             return $this->renderView($presenter);
+        }
+
+        if (is_null($presenter)) {
+            $presenter = $this->getDefaultPresenterForActiveStyle();
         }
 
         if ($this->hasStyle($presenter)) {
