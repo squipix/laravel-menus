@@ -20,7 +20,14 @@ This package is a fork and drop-in replacement for nWidart/laravel-menus that ad
 
 ## Documentation
 
-You'll find installation instructions and full documentation on https://Squipix.com/laravel-menus/.
+Local documentation is provided in the `docs/` directory. Start here:
+
+- [Overview](docs/overview.md)
+- [Installation](docs/installation.md)
+- [Usage & Examples](docs/usage.md)
+- [Presenters & Customization](docs/presenters.md)
+
+The original online documentation is still available at https://Squipix.com/laravel-menus/.
 
 ## Credits
 
