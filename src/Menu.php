@@ -142,7 +142,20 @@ class Menu implements Countable
      */
     public function style()
     {
-        return $this->views->make('menus::style')->render();
+        $activeStyle = $this->config->get('menus.activeStyle', 'style1');
+        $views = [
+            'menus::styles.' . $activeStyle . '.style',
+            'menus::styles.style1.style',
+            'menus::style',
+        ];
+
+        foreach ($views as $view) {
+            if ($this->views->exists($view)) {
+                return $this->views->make($view)->render();
+            }
+        }
+
+        return '';
     }
 
     /**

@@ -133,4 +133,22 @@ TEXT;
         $this->menu->destroy();
         $this->assertCount(0, $this->menu->all());
     }
+
+    /** @test */
+    public function it_uses_the_active_style_default_presenter_for_rendering()
+    {
+        app('config')->set('menus.activeStyle', 'style1');
+
+        $this->menu->create('test', function (MenuBuilder $menu) {});
+
+        $this->assertStringContainsString('sidebar-menu tree', $this->menu->get('test'));
+    }
+
+    /** @test */
+    public function it_switches_style_partial_based_on_active_style()
+    {
+        app('config')->set('menus.activeStyle', 'style2');
+
+        $this->assertStringContainsString('style2', $this->menu->style());
+    }
 }

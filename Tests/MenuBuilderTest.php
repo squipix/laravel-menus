@@ -116,4 +116,45 @@ class MenuBuilderTest extends BaseTestCase
         $builder->setPresenter(\stdClass::class);
         $builder->getPresenter();
     }
+
+    /** @test */
+    public function it_reads_presenters_from_active_style_configuration()
+    {
+        app('config')->set('menus.activeStyle', 'style1');
+
+        $builder = new MenuBuilder('main', app(Repository::class));
+
+        self::assertTrue($builder->hasStyle('adminlte'));
+        self::assertEquals(
+            \Squipix\Menus\Presenters\Admin\AdminltePresenter::class,
+            $builder->getStyle('adminlte')
+        );
+    }
+
+    /** @test */
+    public function it_uses_active_style_default_presenter_when_no_presenter_is_provided()
+    {
+        app('config')->set('menus.activeStyle', 'style1');
+
+        $builder = new MenuBuilder('main', app(Repository::class));
+
+        self::assertStringContainsString('sidebar-menu tree', $builder->render());
+    }
+
+    /** @test */
+    public function it_falls_back_to_legacy_styles_when_style_presenters_are_missing()
+    {
+        app('config')->set('menus.stylePresenters', []);
+        app('config')->set('menus.styles', [
+            'legacy' => \Squipix\Menus\Presenters\Bootstrap\NavbarPresenter::class,
+        ]);
+
+        $builder = new MenuBuilder('main', app(Repository::class));
+
+        self::assertTrue($builder->hasStyle('legacy'));
+        self::assertEquals(
+            \Squipix\Menus\Presenters\Bootstrap\NavbarPresenter::class,
+            $builder->getStyle('legacy')
+        );
+    }
 }

@@ -1,7 +1,5 @@
-@foreach ($items as $item)
-	@if ($item->hasChilds())
-		@include('menus::item.dropdown', compact('item'))
-	@else
-		@include('menus::item.item', compact('item'))
-	@endif
-@endforeach
+@php($activeStyle = config('menus.activeStyle', 'style1'))
+@includeFirst([
+    'menus::styles.' . $activeStyle . '.menu',
+    'menus::styles.style1.menu',
+], ['items' => $items])
