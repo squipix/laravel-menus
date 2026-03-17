@@ -1,7 +1,7 @@
 {
   "name": "squipix/laravel-menus",
   "description": "Laravel Menu management",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "keywords": [
     "laravel",
     "menus",
