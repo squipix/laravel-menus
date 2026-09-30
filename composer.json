@@ -1,7 +1,7 @@
 {
   "name": "squipix/laravel-menus",
   "description": "Laravel Menu management",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "keywords": [
     "laravel",
     "menus",
@@ -26,9 +26,9 @@
   ],
   "require": {
     "php": "^8.2",
-    "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
-    "illuminate/config": "^8.0|^9.0|^10.0|^11.0|^12.0",
-    "illuminate/view": "^8.0|^9.0|^10.0|^11.0|^12.0",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+    "illuminate/config": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+    "illuminate/view": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
     "squipix/html": "^1.0"
   },
   "require-dev": {
